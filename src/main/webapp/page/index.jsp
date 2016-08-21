@@ -1,14 +1,14 @@
-<%@ page contentType="text/html;charset=gb2312"%>
+<%@ page contentType="text/html;charset=utf-8"%>
 <html>
 <head>
-<title>Éí·ÝÖ¤ÐÅÏ¢</title>
+<title>ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ï¢</title>
 </head>
 <object classid="clsid:5EB842AE-5C49-4FD8-8CE9-77D4AF9FD4FF" id="IdrControl1" width="100" height="100" >
 </object>
 
 <body>
 <form name="idCardForm" action="/saveIdCardInfo.html" method='post'>
-<!-- ÒÔÏÂÒþ²ØÔªËØÎªÌá½»ºóÌ¨µÄÊý¾Ý -->
+<!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Îªï¿½á½»ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -->
 <input id="idCode" name="idCode" type="hidden">
 <input id="username" name="username" type="hidden">
 <input id="sex" name="sex" type="hidden">
@@ -16,53 +16,53 @@
 
 <table id="oTable"  width="800" border="1" cellspacing="0" cellpadding="0" >
 <tr>
-<td width="200"><input type="button" value="¶ÁÉí·ÝÖ¤" onClick="javascript:Idcard();">
+<td width="200"><input type="button" value="ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤" onClick="javascript:Idcard();">
 </td>
-<td width="500"><input id="saveButton" type="submit" value="±£ ´æ" style="display:none;">
+<td width="500"><input id="saveButton" type="submit" value="ï¿½ï¿½ ï¿½ï¿½" style="display:none;">
 </td>
 </tr>
 <tr>
-<td >ÕÕÆ¬£º</td>
+<td >ï¿½ï¿½Æ¬ï¿½ï¿½</td>
 <td ></td>
 </tr>
 <tr>
-<td >ÐÕÃû£º</td>
+<td >ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td>
 <td >&nbsp;</td>
 </tr>
 <tr>
-<td>Ãñ×å£º</td>
+<td>ï¿½ï¿½ï¿½å£º</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>ÐÔ±ð</td>
+<td>ï¿½Ô±ï¿½</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>³öÉú£º</td>
+<td>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>¹«ÃñÉí·ÝÖ¤ºÅÂë£º</td>
+<td>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ë£º</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>µØÖ·£º</td>
+<td>ï¿½ï¿½Ö·ï¿½ï¿½</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>Ç©·¢»ú¹Ø£º</td>
+<td>Ç©ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>ÓÐÐ§ÈÕÆÚ£º</td>
+<td>ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ú£ï¿½</td>
 <td >&nbsp;</td>
 </tr>
 <tr>
-<td>°²È«Ä£¿éºÅ£º</td>
+<td>ï¿½ï¿½È«Ä£ï¿½ï¿½Å£ï¿½</td>
 <td>&nbsp;</td >
 </tr>    
 <tr>
-<td>Éí·ÝÖ¤¿¨ºÅ£º</td>
+<td>ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½Å£ï¿½</td>
 <td>&nbsp;</td >
 </tr>
 </table>
@@ -76,17 +76,17 @@ function Idcard(){
 try {  
     var ax = new ActiveXObject("IDRCONTROL.IdrControlCtrl.1");
 } catch(e) {  
-    alert("¿Ø¼þÎ´°²×°");  
+    alert("ï¿½Ø¼ï¿½Î´ï¿½ï¿½×°");  
 }  	
 
-	//×¢Òâ£ºµÚÒ»¸ö²ÎÊýÎª¶ÔÓ¦µÄÉè±¸¶Ë¿Ú£¬USBÐÍÎª1001£¬´®¿ÚÐÍÎª1ÖÁ16
+	//×¢ï¿½â£ºï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ó¦ï¿½ï¿½ï¿½è±¸ï¿½Ë¿Ú£ï¿½USBï¿½ï¿½Îª1001ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª1ï¿½ï¿½16
 	result=IdrControl1.ReadCard("1001","");
 	if (result==1){
 		document.all.oTable.rows(1).cells(1).innerHTML='<img src="data:image/jpeg;base64,'+IdrControl1.GetCardPhotobuf()+'"/>';
 		document.all.oTable.rows(2).cells(1).innerText=IdrControl1.GetName();
 		document.all.oTable.rows(3).cells(1).innerText=IdrControl1.GetFolk();
 		document.all.oTable.rows(4).cells(1).innerText=IdrControl1.GetSex();
-		document.all.oTable.rows(5).cells(1).innerText=IdrControl1.GetBirthYear() + "Äê" + IdrControl1.GetBirthMonth() + "ÔÂ" + IdrControl1.GetBirthDay() +  "ÈÕ";
+		document.all.oTable.rows(5).cells(1).innerText=IdrControl1.GetBirthYear() + "ï¿½ï¿½" + IdrControl1.GetBirthMonth() + "ï¿½ï¿½" + IdrControl1.GetBirthDay() +  "ï¿½ï¿½";
 		cardsn=IdrControl1.GetCode();
 		document.all.oTable.rows(6).cells(1).innerText=cardsn;
 		document.all.oTable.rows(7).cells(1).innerText=IdrControl1.GetAddress();
@@ -104,13 +104,13 @@ try {
 		
 	} else {
 		if (result==-1)
-			alert("¶Ë¿Ú³õÊ¼»¯Ê§°Ü£¡");
+			alert("ï¿½Ë¿Ú³ï¿½Ê¼ï¿½ï¿½Ê§ï¿½Ü£ï¿½");
 		if (result==-2)
-			alert("ÇëÖØÐÂ½«¿¨Æ¬·Åµ½¶Á¿¨Æ÷ÉÏ£¡");
+			alert("ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½Æ¬ï¿½Åµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½");
 		if (result==-3)
-			alert("¶ÁÈ¡Êý¾ÝÊ§°Ü£¡");
+			alert("ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½");
 		if (result==-4)
-			alert("Éú³ÉÕÕÆ¬ÎÄ¼þÊ§°Ü£¬Çë¼ì²éÉè¶¨Â·¾¶ºÍ´ÅÅÌ¿Õ¼ä£¡");
+			alert("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¬ï¿½Ä¼ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è¶¨Â·ï¿½ï¿½ï¿½Í´ï¿½ï¿½Ì¿Õ¼ä£¡");
 	}
 }
 </script>

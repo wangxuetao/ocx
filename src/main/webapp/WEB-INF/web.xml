@@ -24,7 +24,7 @@
 		<async-supported>true</async-supported>
 		<init-param>
 			<param-name>encoding</param-name>
-			<param-value>gb2312</param-value>
+			<param-value>utf-8</param-value>
 		</init-param>
 		<init-param>
 			<param-name>forceEncoding</param-name>
@@ -36,6 +36,20 @@
 		<filter-name>SetCharacterEncoding</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
+	 <filter>
+       <filter-name>urlFilter</filter-name>
+       <filter-class>com.ocx.filter.LoginFilter</filter-class>
+       <init-param>
+			<param-name>urlautopath</param-name>
+			<param-value>urlauto.properties</param-value>
+		</init-param>
+     </filter>
+   
+   <filter-mapping>
+       <filter-name>urlFilter</filter-name>
+       <url-pattern>/*</url-pattern>
+   </filter-mapping>
 	
 	<servlet>
 		<servlet-name>mvc</servlet-name>
